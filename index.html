@@ -7,9 +7,9 @@
 </head>
 <body>
 
-    <h1>Directory: /</h1>
+    <h1 class="lol">Directory: /</h1>
     <a href="/">🏠</a> 
-    <input type="text" id="searchInput" placeholder="Type to search">
+    <input type="text" id="searchInput" placeholder="Type to search" class="search">
     <ul id="fileList"></ul>
 
     <script>
@@ -60,5 +60,6 @@
         color: #fff;
         font-family: 'Roboto',sans-serif;
     }
-    a{color: #fff;  }
+    a{color: #fff; font-size: 20px; transition: ease-in 0.3s; } a:hover{color:aquamarine;}
+    .search{border-radius: 5px; font-size: 20px;} 
 </style>
