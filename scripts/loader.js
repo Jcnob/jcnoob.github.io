@@ -26,8 +26,20 @@ let oberv = new IntersectionObserver((entires) => {
 let hidden = document.querySelectorAll('.hiddenv2')
 hidden.forEach((el) =>  oberv.observe(el))
 
+//adjustment 2
+let oberv1 = new IntersectionObserver((entires) => {
+    entires.forEach((entry) => {
+        if(entry.isIntersecting){
+            entry.target.classList.add('showv2A2');
+        }else{
+            entry.target.classList.remove('showv2A2')
+        }
+    })
+})
+let hidden1 = document.querySelectorAll('.hiddenv2A2')
+hidden1.forEach((el) =>  oberv1.observe(el))
 
-
+//-------------------ENDLOLOLOL0OLOOOLOOLOLOLOLLL////////////////////
 console.log(`%c //Monke shit loader v1.1
 coded: monke kyle (kyle make this nice console log yeh) and jac 
 design: jacblakman
