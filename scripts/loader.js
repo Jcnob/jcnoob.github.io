@@ -43,7 +43,7 @@ hidden1.forEach((el) =>  oberv1.observe(el))
 //---------------------------IMPORTANT SCRIPT (THE UPDATER)-----------------
 function isOldIE() {
     var userAgent = window.navigator.userAgent;
-    return userAgent.indexOf('MSIE ') > -1 || userAgent.indexOf('Trident/') > -1;
+    return userAgent.indexOf('MSIE') > -1 || userAgent.indexOf('Trident/') > -1;
 }
 if (isOldIE()) {
  window.location.href('/not_suppported.html')
