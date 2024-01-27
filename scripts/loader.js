@@ -39,10 +39,22 @@ let oberv1 = new IntersectionObserver((entires) => {
 let hidden1 = document.querySelectorAll('.hiddenv2A2')
 hidden1.forEach((el) =>  oberv1.observe(el))
 
+
+//---------------------------IMPORTANT SCRIPT (THE UPDATER)-----------------
+function isOldIE() {
+    var userAgent = window.navigator.userAgent;
+    return userAgent.indexOf('MSIE ') > -1 || userAgent.indexOf('Trident/') > -1;
+}
+if (isOldIE()) {
+ window.location.href('/not_suppported.html')
+  
+}
 //-------------------ENDLOLOLOL0OLOOOLOOLOLOLOLLL////////////////////
-console.log(`%c //Monke shit loader v1.1
+console.log(`%c //Monke shit loader v1.2
 coded: monke kyle (kyle make this nice console log yeh) and jac 
 design: jacblakman
 http://go.jcmainclr.xyz/ 
 http://go.jcmainclr.xyz/kyle
+
+//updates on this loader http://go.jcmainclr.xyz/loader-log
 `, ' color: green')
